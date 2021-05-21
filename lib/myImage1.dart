@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:imagecompressionflutter_app/size_config.dart';
 
-import 'detail_page.dart';
+import 'detailPage.dart';
 
 class myImage1 extends StatefulWidget {
 
@@ -14,8 +15,8 @@ class myImage1State extends State<myImage1> {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        top: 0.0,
-        left: 45,
+        top: 0*SizeConfig.heightMultiplier,
+        left: 14.0625*SizeConfig.widthMultiplier,
         child: GestureDetector(
         onTap: (){
       Navigator.push(
@@ -25,8 +26,8 @@ class myImage1State extends State<myImage1> {
     },
         child: Container
           (
-          width: 100.0,
-          height: 100.0,
+          width: 31.25*SizeConfig.widthMultiplier,
+          height: 15.625*SizeConfig.heightMultiplier,
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(

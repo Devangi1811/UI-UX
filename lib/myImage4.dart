@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imagecompressionflutter_app/size_config.dart';
 
 class myImage4 extends StatefulWidget {
 
@@ -12,12 +13,12 @@ class myImage4State extends State<myImage4> {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        top: 0.0,
-        left: 45,
+        top: 0*SizeConfig.heightMultiplier,
+        left: 14.0625*SizeConfig.widthMultiplier,
         child: Container
           (
-          width: 100.0,
-          height: 100.0,
+          width: 31.25*SizeConfig.widthMultiplier,
+          height: 15.625*SizeConfig.heightMultiplier,
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(

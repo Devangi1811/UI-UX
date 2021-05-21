@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
+
+import 'package:imagecompressionflutter_app/size_config.dart';
 
 class DetailPage extends StatefulWidget {
   @override
   DetailPageState createState() => DetailPageState();
 }
 
-class DetailPageState extends State<DetailPage> {
+class DetailPageState extends State<DetailPage>
+    {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,19 +22,19 @@ class DetailPageState extends State<DetailPage> {
             children: <Widget>[
               Padding(
                 padding:
-                    const EdgeInsets.only(top: 0, right: 0, left: 0, bottom: 0),
+                     EdgeInsets.only(top: 0*SizeConfig.heightMultiplier, right: 0*SizeConfig.widthMultiplier, left: 0*SizeConfig.widthMultiplier, bottom: 0*SizeConfig.heightMultiplier),
                 child: Container(
-                  height: 350,
+                  height: 54.6875*SizeConfig.heightMultiplier,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(40.0),
-                          bottomRight: Radius.circular(40.0))),
+                          bottomLeft: Radius.circular(12.5*SizeConfig.widthMultiplier),
+                          bottomRight: Radius.circular(12.5*SizeConfig.widthMultiplier))),
                   child: Column(
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.only(
-                            top: 30, right: 0, bottom: 0, left: 0),
+                        padding:  EdgeInsets.only(
+                            top: 4.6875*SizeConfig.heightMultiplier, right: 0*SizeConfig.widthMultiplier, bottom: 0*SizeConfig.heightMultiplier, left: 0*SizeConfig.widthMultiplier),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
@@ -39,14 +44,14 @@ class DetailPageState extends State<DetailPage> {
                               ),
                             ),
                             SizedBox(
-                              width: 4,
+                              width: 1.25*SizeConfig.widthMultiplier,
                             ),
                             Expanded(
                               child: Text(
                                 "Vegan Meal",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 15,
+                                  fontSize: 2.34375*SizeConfig.textMultiplier,
                                   color: Colors.black,
                                 ),
                               ),
@@ -60,20 +65,20 @@ class DetailPageState extends State<DetailPage> {
                         ),
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 3.125*SizeConfig.heightMultiplier,
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 10, right: 190),
+                        padding: EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier, right: 59.375*SizeConfig.widthMultiplier),
                         child: Text(
                           "Russian Salad",
                           style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 2.0*SizeConfig.textMultiplier,
                               color: Colors.greenAccent,
                               fontWeight: FontWeight.bold),
                         ),
                       ),
                       SizedBox(
-                        height: 30,
+                        height: 4.6875*SizeConfig.heightMultiplier,
                       ),
                       Row(
                         children: <Widget>[
@@ -86,15 +91,15 @@ class DetailPageState extends State<DetailPage> {
                                     color: Colors.yellow,
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 1.5625*SizeConfig.widthMultiplier,
                                   ),
                                   Text("No Oil"),
                                 ],
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 3.125*SizeConfig.heightMultiplier,
                               ),
-                              Padding(padding: EdgeInsets.only(left: 10)),
+                              Padding(padding: EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier)),
                               Row(
                                 children: <Widget>[
                                   Icon(
@@ -102,15 +107,15 @@ class DetailPageState extends State<DetailPage> {
                                     color: Colors.red,
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 1.5625*SizeConfig.widthMultiplier,
                                   ),
                                   Text("23 Calory"),
                                 ],
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 3.125*SizeConfig.heightMultiplier,
                               ),
-                              Padding(padding: EdgeInsets.only(left: 10)),
+                              Padding(padding: EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier)),
                               Row(
                                 children: <Widget>[
                                   Icon(
@@ -118,15 +123,15 @@ class DetailPageState extends State<DetailPage> {
                                     color: Colors.black,
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 1.5625*SizeConfig.widthMultiplier,
                                   ),
                                   Text("Sugar"),
                                 ],
                               ),
                               SizedBox(
-                                height: 40,
+                                height: 6.25*SizeConfig.heightMultiplier,
                               ),
-                              Padding(padding: EdgeInsets.only(left: 10)),
+                              Padding(padding: EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier)),
                               Text(
                                 "350g Qua.",
                                 style: TextStyle(
@@ -134,9 +139,9 @@ class DetailPageState extends State<DetailPage> {
                                     fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
-                                height: 10,
+                                height: 1.5625*SizeConfig.heightMultiplier,
                               ),
-                              Padding(padding: EdgeInsets.only(left: 10)),
+                              Padding(padding: EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier)),
                               Row(
                                 children: <Widget>[
                                   Icon(
@@ -144,7 +149,7 @@ class DetailPageState extends State<DetailPage> {
                                     color: Colors.yellow,
                                   ),
                                   SizedBox(
-                                    width: 4,
+                                    width: 1.25*SizeConfig.widthMultiplier,
                                   ),
                                   Text(
                                     "4.8",
@@ -153,7 +158,7 @@ class DetailPageState extends State<DetailPage> {
                                         fontWeight: FontWeight.bold),
                                   ),
                                   SizedBox(
-                                    width: 2,
+                                    width: 0.625*SizeConfig.widthMultiplier,
                                   ),
                                   Text(
                                     "(128)",
@@ -166,25 +171,29 @@ class DetailPageState extends State<DetailPage> {
                             ],
                           ),
                           SizedBox(
-                            width: 20,
+                            width: 6.25*SizeConfig.widthMultiplier,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(
-                                left: 50, right: 10, top: 10, bottom: 10),
-                            child: Positioned(
-                                top: 10.0,
-                                right: 100,
-                                child: Container(
-                                  width: 120.0,
-                                  height: 120.0,
-                                  decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      image: DecorationImage(
-                                          fit: BoxFit.fill,
-                                          image: AssetImage(
-                                              "assets/images/salad.jpg"))),
-                                )),
-                          ),
+                            padding:  EdgeInsets.only(
+                                left: 15.625*SizeConfig.widthMultiplier, right: 1.5625*SizeConfig.widthMultiplier, top: 0.15625*SizeConfig.heightMultiplier, bottom: 0.15625*SizeConfig.heightMultiplier),
+
+                                  child: Positioned(
+                                      top: 1.5625*SizeConfig.heightMultiplier,
+                                      right: 15.625*SizeConfig.widthMultiplier,
+                                      child: Container(
+                                        width: 37.5*SizeConfig.widthMultiplier,
+                                        height: 18.625*SizeConfig.heightMultiplier,
+                                        decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            image: DecorationImage(
+                                                fit: BoxFit.fill,
+                                                image: AssetImage(
+                                                    "assets/images/salad.jpg"))),
+                                      )),
+
+
+                            ),
+
                         ],
                       ),
                     ],
@@ -192,24 +201,24 @@ class DetailPageState extends State<DetailPage> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 4.6875*SizeConfig.heightMultiplier,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.only(left:10,right:200),
+                    padding:  EdgeInsets.only(left: 1.5625*SizeConfig.widthMultiplier, right: 62.5*SizeConfig.widthMultiplier),
                     child: Text(
                       "Ingredients",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 3.125*SizeConfig.textMultiplier,
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 3.125*SizeConfig.heightMultiplier,
                   ),
 
                   // Row(
@@ -431,8 +440,8 @@ class DetailPageState extends State<DetailPage> {
               ),
               ListTile(
                 leading: Container(
-                  width: 50.0,
-                  height: 50.0,
+                  width: 15.625*SizeConfig.widthMultiplier,
+                  height: 7.8125*SizeConfig.heightMultiplier,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
@@ -444,25 +453,30 @@ class DetailPageState extends State<DetailPage> {
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Cabbage",style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    Text("Cabbage also contains small amounts of other micronutrients, including vitamin A, iron and riboflavin.",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 10,
-                    ),),
+                    Text(
+                      "Cabbage",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "Cabbage also contains small amounts of other micronutrients, including vitamin A, iron and riboflavin.",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 1.5625*SizeConfig.textMultiplier,
+                      ),
+                    ),
                   ],
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 3.125*SizeConfig.heightMultiplier,
               ),
               ListTile(
                 leading: Container(
-                  width: 50.0,
-                  height: 50.0,
+                  width: 15.625*SizeConfig.widthMultiplier,
+                  height: 7.8125*SizeConfig.heightMultiplier,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
@@ -474,26 +488,31 @@ class DetailPageState extends State<DetailPage> {
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Lemon",style: TextStyle(
-                        color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    Text("Lemons are high in vitamin C, fiber, and various beneficial plant compounds.",
+                    Text(
+                      "Lemon",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10,
-                      ),),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "Lemons are high in vitamin C, fiber, and various beneficial plant compounds.",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 1.5625*SizeConfig.textMultiplier,
+                      ),
+                    ),
                   ],
                 ),
               ),
 
               SizedBox(
-                height: 20,
+                height: 3.125*SizeConfig.heightMultiplier,
               ),
               ListTile(
                 leading: Container(
-                  width: 50.0,
-                  height: 50.0,
+                  width: 15.625*SizeConfig.widthMultiplier,
+                  height: 7.8125*SizeConfig.heightMultiplier,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
@@ -505,25 +524,30 @@ class DetailPageState extends State<DetailPage> {
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Cucumber",style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    Text("It’s high in beneficial nutrients, as well as certain plant compounds and antioxidants that may help treat and even prevent some conditions.",
+                    Text(
+                      "Cucumber",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10,
-                      ),),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "It’s high in beneficial nutrients, as well as certain plant compounds and antioxidants that may help treat and even prevent some conditions.",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 1.5625*SizeConfig.textMultiplier,
+                      ),
+                    ),
                   ],
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 3.125*SizeConfig.heightMultiplier,
               ),
               ListTile(
                 leading: Container(
-                  width: 50.0,
-                  height: 50.0,
+                  width: 15.625*SizeConfig.widthMultiplier,
+                  height: 7.8125*SizeConfig.heightMultiplier,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
@@ -535,47 +559,46 @@ class DetailPageState extends State<DetailPage> {
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Onion",style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    Text("Onions are members of the Allium genus of flowering plants that also includes garlic, shallots, leeks and chives.",
+                    Text(
+                      "Onion",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10,
-                      ),),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "Onions are members of the Allium genus of flowering plants that also includes garlic, shallots, leeks and chives.",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 1.5625*SizeConfig.textMultiplier,
+                      ),
+                    ),
                   ],
                 ),
               ),
 
               SizedBox(
-                height: 20,
+                height: 3.125*SizeConfig.heightMultiplier,
               ),
-                 Container(
-                   width: 150,
-                   height: 50,
-                   child:
-                 RaisedButton(
-
-                      onPressed: () {
-
-                      },
-                      color: Colors.red,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Text("Add to order", style: TextStyle(
-                          color: Colors.white
-
-                      )),
-                    ),
-                 ),
+              Container(
+                width: 46.875*SizeConfig.widthMultiplier,
+                height: 7.8125*SizeConfig.heightMultiplier,
+                child: RaisedButton(
+                  onPressed: () {},
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(5.5556*SizeConfig.widthMultiplier),
+                        bottomRight: Radius.circular(5.5556*SizeConfig.widthMultiplier),
+                        topLeft: Radius.circular(5.5556*SizeConfig.widthMultiplier),
+                        topRight: Radius.circular(5.5556*SizeConfig.widthMultiplier),)),
+                  child: Text("Add to order",
+                      style: TextStyle(color: Colors.white)),
+                ),
+              ),
               SizedBox(
-                height: 40,
+                height: 6.25*SizeConfig.heightMultiplier,
               ),
-
-
-
-
 
               // Row(
               //   children: <Widget>[
@@ -644,8 +667,7 @@ class DetailPageState extends State<DetailPage> {
               //   ],
               // )
             ],
-    ),
-
+          ),
         ),
       ),
     );
