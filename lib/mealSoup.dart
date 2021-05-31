@@ -12,6 +12,8 @@ class myImage extends StatefulWidget {
   myImageState createState() => myImageState();
 }
 class myImageState extends State<myImage> {
+  //this widget is make image in round shape with particular height and width.
+  //also conatin image url.
   @override
   Widget build(BuildContext context) {
     return Positioned(

@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:imagecompressionflutter_app/size_config.dart';
 
-class myImage5 extends StatefulWidget {
+class myImage2 extends StatefulWidget {
 
 
 
 
   @override
-  myImage5State createState() => myImage5State();
+  myImage2State createState() => myImage2State();
 }
-class myImage5State extends State<myImage5> {
+class myImage2State extends State<myImage2> {
+  //this widget is make image in round shape with particular height and width.
+  //also conatin image url.
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -23,7 +25,7 @@ class myImage5State extends State<myImage5> {
               shape: BoxShape.circle,
               image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage("assets/images/pumpkin.jpg")
+                  image: AssetImage("assets/images/maxicansalad.jpg")
               )
           ),
 

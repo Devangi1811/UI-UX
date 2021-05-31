@@ -1,29 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:imagecompressionflutter_app/size_config.dart';
 
-import 'detailPage.dart';
-
-class myImage1 extends StatefulWidget {
+class myImage3 extends StatefulWidget {
 
 
 
 
   @override
-  myImage1State createState() => myImage1State();
+  myImage3State createState() => myImage3State();
 }
-class myImage1State extends State<myImage1> {
+class myImage3State extends State<myImage3> {
+  //this widget is make image in round shape with particular height and width.
+  //also conatin image url.
   @override
   Widget build(BuildContext context) {
     return Positioned(
         top: 0*SizeConfig.heightMultiplier,
-        left: 14.0625*SizeConfig.widthMultiplier,
-        child: GestureDetector(
-        onTap: (){
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => DetailPage()),
-      );
-    },
+        left:  14.0625*SizeConfig.widthMultiplier,
         child: Container
           (
           width: 31.25*SizeConfig.widthMultiplier,
@@ -32,10 +25,9 @@ class myImage1State extends State<myImage1> {
               shape: BoxShape.circle,
               image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage("assets/images/salad.jpg")
+                  image: AssetImage("assets/images/creamsoup.jpg")
               )
           ),
-        ),
 
 
         ));
